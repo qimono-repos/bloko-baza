@@ -1,0 +1,39 @@
+<Project Sdk="Microsoft.NET.Sdk.Razor">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <SupportedPlatform Include="browser" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="9.0.1" />
+    <PackageReference Include="Qimono.Baza.Modeloj" Version="1.0.1" />
+  </ItemGroup>
+
+
+  <PropertyGroup>
+    <PackageId>Qimono.Baza.Bloko</PackageId>
+    <Version>1.0.0</Version>
+    <Title>Baza Bloko (by QiMono)</Title>
+    <Authors>QiMono</Authors>
+    <Description>Basic Reusable Components for .NET Apps</Description>
+    <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
+    <PackageReadmeFile>LICENSE.md</PackageReadmeFile>
+    <PackageProjectUrl>https://qimono76.wordpress.com</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/qimono-repos/bloko-baza.git</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>component,razor, hybrid</PackageTags>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    </PropertyGroup>
+
+  <ItemGroup>
+      <None Include="LICENSE.md" Pack="true" PackagePath="" />
+      <None Include="README.md" Pack="true" PackagePath="" />
+    </ItemGroup>
+</Project>
+
