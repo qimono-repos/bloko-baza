@@ -31,7 +31,7 @@
     </PropertyGroup>
 
   <ItemGroup>
-    <None Include="LICENSE.md" Pack="true" PackagePath="" />
+    <None Include="LICENSE-LGPLv3.md" Pack="true" PackagePath="" />
   </ItemGroup>
   <ItemGroup>
     <None Include="README.md" Pack="true" PackagePath="" />
