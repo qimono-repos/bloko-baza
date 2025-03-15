@@ -17,7 +17,7 @@
 
   <PropertyGroup>
     <PackageId>Qimono.Baza.Bloko</PackageId>
-    <Version>1.0.1</Version>
+    <Version>1.0.2</Version>
     <Title>Baza Bloko (by QiMono)</Title>
     <Authors>QiMono</Authors>
     <Description>Basic Reusable Components for .NET Apps</Description>
