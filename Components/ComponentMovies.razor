@@ -35,16 +35,16 @@
     </div>
 
     @code {
-	private MovieType[]? movies;
-	private MovieType[]? filteredMovies;
+	private MovieDto[]? movies;
+	private MovieDto[]? filteredMovies;
 	protected override async Task OnInitializedAsync()
 	{
 	    await Task.Delay(500);
 
 	    var startDate = DateTime.Now.AddDays(Random.Shared.Next(1,15));
-	    movies = Enumerable.Range(1, 12).Select(index => new MovieType {
+	    movies = Enumerable.Range(1, 12).Select(index => new MovieDto {
 		    Director = new (){Name= $"The Director {index}"},
-        Actors = new ActorType[]{new(){Name = $"The Actress {index + 12}"}, new(){Name = $"The Actor {index + 24}"}},
+        Actors = new ActorDto[]{new(){Name = $"The Actress {index + 12}"}, new(){Name = $"The Actor {index + 24}"}},
         Title = $"Movie {index}",
 		    ReleaseDate = startDate.AddMonths(index).AddDays(Random.Shared.Next(1,28)),
 		    Genre = (Genre)Random.Shared.Next(0, 5),

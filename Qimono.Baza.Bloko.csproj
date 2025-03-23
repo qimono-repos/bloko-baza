@@ -12,17 +12,13 @@
     <SupportedPlatform Include="ios" />
   </ItemGroup>
 
-  <ItemGroup Condition="'$(TargetFramework)' == 'net9.0' and $([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'browser'">
-       <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="9.0.1" />
-  </ItemGroup>
-
   <ItemGroup>
-    <PackageReference Include="Qimono.Baza.Modeloj" Version="1.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="9.0.1" />
   </ItemGroup>
 
   <PropertyGroup>
     <PackageId>Qimono.Baza.Bloko</PackageId>
-    <Version>1.0.3</Version>
+    <Version>1.0.4</Version>
     <Title>Baza Bloko (by QiMono)</Title>
     <Authors>QiMono</Authors>
     <Description>Basic Reusable Components for .NET Apps</Description>
@@ -33,13 +29,16 @@
     <RepositoryType>git</RepositoryType>
     <PackageTags>component,razor, hybrid</PackageTags>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    </PropertyGroup>
+  </PropertyGroup>
 
   <ItemGroup>
     <None Include="LICENSE-LGPLv3.md" Pack="true" PackagePath="" />
   </ItemGroup>
   <ItemGroup>
     <None Include="README.md" Pack="true" PackagePath="" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Qimono.Baza.Entoj" Version="1.0.0" />
   </ItemGroup>
 </Project>
 
